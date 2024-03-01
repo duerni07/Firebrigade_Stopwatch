@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        #timer {
+            font-size: 15em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+        }
+        #buttons {
+            position:absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #lap-times-container {
+            position: absolute;
+            top: 70%;
+            left: 10%;
+            transform: translate(-50%, 0%);
+            text-align: center;
+        }
+
+        #last_stoptimes_container {
+            position: absolute;
+            top: 10%;
+            right: 3%;
+            transform: translate(-50%, 0%);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="timer"></div>
+    <div id="buttons">
+        <button id="start" class="btn">Start</button>
+        <button id="stop" class ="btn">Stop</button>
+        <button id="reset" class="btn">Reset</button>
+        <button id="lap" class="btn">Lap</button>
+        <button id="start_audio_with_stopwatch" class="btn">Audio with Stopwatch</button>
+        <button id="play_audio_only" class="btn">Audio Only</button>
+    </div>
+
+    <div id="lap-times-container">
+        <h2>Lap Times</h2>
+        <ul id="lap-times"></ul>
+    </div>
+
+    <div id="last_stoptimes_container">
+        <h2>Last Stop Times</h2>
+        <ul id="last_stoptimes"></ul>
+    </div>
+
+    <script src="{{url_for('static', filename='stopwatch.js')}}"> </script>
+
+</body>
+</html>

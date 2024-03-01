@@ -1,0 +1,5 @@
+ESP32       LCD-I2C
+V5		VCC
+GND		GND
+G21		SDA
+G22		SCL

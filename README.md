@@ -1,6 +1,7 @@
 # ESP32 Stopwatch
 
-![ESP32 Stopwatch](example_picture.jpg)
+![Stopwatch in Browser](python_stopwatch.jpg)
+![ESP32 Stopwatch](esp32_stopwatch.jpg)
 
 This project contains a C++ program designed for ESP32 microcontroller boards, specifically tested on the AZ-Delivery Devkit v4, programmed using PlatformIO in Visual Studio Code. The program turns the ESP32 into a stopwatch, utilizing buttons and a 16x2 I²C LCD display.
 
